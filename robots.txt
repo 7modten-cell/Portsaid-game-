@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /apps
+Disallow: /admin
+Disallow: /api/
+Disallow: /login
+Disallow: /logout
+Disallow: /health
+Disallow: /games/grid
+Disallow: /movies/grid
+Disallow: /electronics/grid
+Disallow: /programs/grid
+Sitemap: https://portsaid-store.duckdns.org/sitemap.xml

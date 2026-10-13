@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.7modten@gmail.com

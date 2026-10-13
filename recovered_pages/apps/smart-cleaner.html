@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta name="csrf-token" content="cfc02db60f59228e856660d270db7fd5479510b9c06a10eb3371fc82e0f2bc9e">
+    <script>
+        /* CSRF: التوكن متاح للسكربتات (fetch) + htmx بيبعته هيدر X-CSRF-Token
+           تلقائيًا في كل طلب — اللستِنر على document عشان الحدث بيعمل bubble */
+        window.CSRF_TOKEN = document.querySelector('meta[name="csrf-token"]').content;
+        document.addEventListener('htmx:configRequest', function (e) {
+            e.detail.headers['X-CSRF-Token'] = window.CSRF_TOKEN;
+        });
+    </script>
+    <script src="/static/dist/device-profile.6f989abd.js?v=1"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Cleaner | تطبيقات وأدوات — Portsaid Computer</title>
+    
+<meta name="description" content="بيقولك إيه اللي واخد مساحة، وليه، وبعدين يعزله بأمان لحد ما تقرر.. الإصدار 1.0.22. متاح على Windows. نسخة Free مجانية وخطة Pro باشتراك">
+<link rel="canonical" href="https://portsaid-store.duckdns.org/apps/smart-cleaner">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:site_name" content="Portsaid Computer">
+<meta property="og:title" content="Smart Cleaner | تطبيقات وأدوات — Portsaid Computer">
+<meta property="og:description" content="بيقولك إيه اللي واخد مساحة، وليه، وبعدين يعزله بأمان لحد ما تقرر.. الإصدار 1.0.22. متاح على Windows. نسخة Free مجانية وخطة Pro باشتراك">
+<meta property="og:url" content="https://portsaid-store.duckdns.org/apps/smart-cleaner">
+<meta property="og:image" content="https://portsaid-store.duckdns.org/static/uploads/smart-cleaner-icon.png">
+<meta property="og:image:alt" content="Smart Cleaner | تطبيقات وأدوات — Portsaid Computer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Smart Cleaner | تطبيقات وأدوات — Portsaid Computer">
+<meta name="twitter:description" content="بيقولك إيه اللي واخد مساحة، وليه، وبعدين يعزله بأمان لحد ما تقرر.. الإصدار 1.0.22. متاح على Windows. نسخة Free مجانية وخطة Pro باشتراك">
+<meta name="twitter:image" content="https://portsaid-store.duckdns.org/static/uploads/smart-cleaner-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@id": "https://portsaid-store.duckdns.org/apps/smart-cleaner#app", "@type": "SoftwareApplication", "applicationCategory": "MultimediaApplication", "description": "\u0628\u064a\u0642\u0648\u0644\u0643 \u0625\u064a\u0647 \u0627\u0644\u0644\u064a \u0648\u0627\u062e\u062f \u0645\u0633\u0627\u062d\u0629\u060c \u0648\u0644\u064a\u0647\u060c \u0648\u0628\u0639\u062f\u064a\u0646 \u064a\u0639\u0632\u0644\u0647 \u0628\u0623\u0645\u0627\u0646 \u0644\u062d\u062f \u0645\u0627 \u062a\u0642\u0631\u0631.. \u0627\u0644\u0625\u0635\u062f\u0627\u0631 1.0.22. \u0645\u062a\u0627\u062d \u0639\u0644\u0649 Windows. \u0646\u0633\u062e\u0629 Free \u0645\u062c\u0627\u0646\u064a\u0629 \u0648\u062e\u0637\u0629 Pro \u0628\u0627\u0634\u062a\u0631\u0627\u0643", "image": ["https://portsaid-store.duckdns.org/static/uploads/smart-cleaner-icon.png"], "inLanguage": "ar", "name": "Smart Cleaner", "operatingSystem": "Windows", "publisher": {"@type": "Organization", "name": "Portsaid Computer"}, "softwareVersion": "1.0.22", "url": "https://portsaid-store.duckdns.org/apps/smart-cleaner"}, {"@id": "https://portsaid-store.duckdns.org/apps/smart-cleaner#breadcrumb", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://portsaid-store.duckdns.org/", "name": "\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629", "position": 1}, {"@type": "ListItem", "item": "https://portsaid-store.duckdns.org/apps", "name": "\u062a\u0637\u0628\u064a\u0642\u0627\u062a \u0648\u0623\u062f\u0648\u0627\u062a", "position": 2}, {"@type": "ListItem", "name": "Smart Cleaner", "position": 3}]}]}</script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32.png">
+    <link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+    
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0F1324">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Portsaid Computer">
+    <style>
+        /* روابط بطاقات الكتالوج → صفحة تفاصيل المنتج (مشتركة بلا طلب إضافي) */
+        .pd-img-link{position:absolute;inset:0;z-index:2;display:block;border-radius:inherit}
+        .pd-img-link:focus-visible{outline:2px solid var(--color-primary);outline-offset:2px}
+        .btn-add-float,.galaxy-card-add{position:relative;z-index:4}
+        a.pd-card-link{color:inherit;text-decoration:none;display:block}
+        a.pd-card-link:hover .game-title{color:var(--color-primary)}
+        .pd-card-link:focus-visible{outline:2px solid var(--color-primary);outline-offset:2px;border-radius:6px}
+    </style>
+    
+<link rel="stylesheet" href="/static/dist/product_detail.061503b8.css?v=6">
+
+    
+    
+    <link rel="preload" href="/static/fonts/fa-solid-900.subset.woff2?v=7" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/cairo-400-900-arabic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/static/fonts/cairo-400-900-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/static/dist/fonts.d982108f.css">
+    <link rel="stylesheet" href="/static/dist/typography.5d5eb317.css">
+    <link rel="stylesheet" href="/static/dist/fontawesome.578844da.css?v=6">
+    <link rel="stylesheet" href="/static/dist/tailwind.c2a9cabd.css?v=70">
+    <link rel="stylesheet" href="/static/dist/aos.1aa8845f.css?v=1">
+    <style>
+  /* ── Grid ── */
+  .apps-grid{
+    display:grid;
+    gap:16px;
+    /* symmetrical: centered cards, each 280-360px, auto-fit collapses empties */
+    /* auto-fit counts columns by the track MAX when that max is a definite
+       length, so minmax(280px,360px) reserved 360px per column: it dropped to
+       ONE column at 768px and left a collapsed 0px third track at >=1280.
+       An indefinite 1fr max makes it count by the 280px minimum and lets the
+       remaining tracks fill the row. min() guards very narrow screens. */
+    grid-template-columns:repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    justify-content:center;
+    width:100%;
+    /* Cap the row at two 360px cards (2 x 360 + 16px gap) and centre it.
+       Without the cap the 1fr tracks stretched the two cards to 585px each at
+       >=1280, far past the 280-360px size this card is designed for. */
+    max-width:min(100%, 736px);
+    margin-inline:auto;
+  }
+  @media(max-width: 767px){
+    .apps-grid{
+      gap:12px;
+      /* 2-col on small tablets, 1-col on very narrow, still centered */
+      grid-template-columns:repeat(auto-fit, minmax(160px, 1fr));
+    }
+  }
+  @media(max-width: 479px){
+    .apps-grid{
+      grid-template-columns:1fr;
+    }
+  }
+  /* /apps keeps the plain grid above (equal cards, centred, capped at 736px).
+     Landing “تطبيقاتنا الرسمية” adds the `apps-grid--showcase` class instead:
+     there it becomes a touch/drag swipe row like the other landing rows
+     (.features-grid / .seo-intro-grid) — same .app-card shape and radius, the
+     swipe CSS lives in assets/tailwind.css and scroll-drag.js arms the mouse
+     drag. Don't reintroduce a separate card size for it. */
+
+  /* ── Card ── */
+  .app-card{
+    background:var(--color-card);
+    border:1px solid var(--color-border);
+    border-radius:20px;
+    padding:1.5rem;
+    /* Hold the card at the top of its 280-360px design band and centre it in
+       its track. Without this a lone card stretches to the full 736px grid
+       (auto-fit collapses the empty tracks), which is the over-wide card this
+       whole fix set exists to prevent. */
+    width:100%;
+    max-width:360px;
+    margin-inline:auto;
+    display:flex;
+    flex-direction:column;
+    gap:.75rem;
+    height:100%;
+    text-decoration:none;
+    color:inherit;
+    transition:transform .28s cubic-bezier(.34,1.56,.64,1), border-color .25s, box-shadow .25s;
+    position:relative;
+    overflow:hidden;
+  }
+  a.app-card:hover{
+    transform:translateY(-6px);
+    border-color:color-mix(in srgb, var(--color-primary) 45%, transparent);
+    box-shadow:0 16px 36px rgba(0,0,0,.5), 0 0 20px color-mix(in srgb, var(--color-primary) 14%, transparent);
+  }
+  .app-card-icon{
+    width:72px;
+    height:72px;
+    border-radius:16px;
+    object-fit:cover;
+    flex-shrink:0;
+    background:color-mix(in srgb, var(--color-card) 80%, var(--color-surface));
+    border:1px solid color-mix(in srgb, var(--color-border) 70%, transparent);
+  }
+  .app-card-name{
+    margin:0;
+    font-family:"Cairo","Tajawal",sans-serif;
+    font-size:var(--fs-lg, 1.125rem);
+    font-weight:var(--fw-title, 600);
+    line-height:1.35;
+    color:var(--color-text);
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+  .app-card-tag{
+    margin:0;
+    color:var(--color-muted);
+    font-family:"Cairo","Tajawal",sans-serif;
+    font-size:var(--fs-sm, 0.875rem);
+    line-height:1.65;
+    min-height:2.7em;
+  }
+  .app-card-badges{
+    display:flex;
+    gap:.4rem;
+    flex-wrap:wrap;
+    margin-top:auto;
+    padding-top:.5rem;
+  }
+  .app-chip{
+    display:inline-flex;
+    align-items:center;
+    gap:.3rem;
+    font-family:"Cairo","Tajawal",sans-serif;
+    font-size:var(--fs-sm, 0.875rem);
+    font-weight:var(--fw-label, 500);
+    line-height:1.35;
+    padding:.25rem .65rem;
+    border-radius:999px;
+    border:1px solid var(--color-border);
+    color:var(--color-muted);
+    white-space:nowrap;
+  }
+  .app-chip--plan{
+    border-color:color-mix(in srgb, var(--color-primary) 35%, transparent);
+    background:color-mix(in srgb, var(--color-primary) 10%, transparent);
+    color:var(--color-link);
+  }
+  .app-chip--ver{
+    border-style:dashed;
+  }
+
+  /* ── Empty & helpers ── */
+  .apps-empty{
+    text-align:center;
+    color:var(--color-muted);
+    font-family:"Cairo","Tajawal",sans-serif;
+    font-size:var(--fs-md, 0.9375rem);
+    line-height:1.7;
+    padding:3rem 1rem;
+    width:100%;
+    max-width:720px;
+    margin-inline:auto;
+  }
+  .apps-show-more{
+    text-align:center;
+    margin-top:1.25rem;
+  }
+  .apps-show-more a{
+    color:var(--color-link);
+    font-weight:var(--fw-strong, 600);
+    font-family:"Cairo","Tajawal",sans-serif;
+    text-decoration:none;
+  }
+  .apps-show-more a:hover{text-decoration:underline;}
+
+  /* ── Section rhythm matching other public pages ── */
+  .apps-page .galaxy-board{
+    /* same as .galaxy-board but ensures symmetrical inner padding */
+    padding:32px 22px 28px;
+  }
+</style>
+<style>
+  .app-chips{display:flex;gap:.4rem;flex-wrap:wrap;margin:.6rem 0;}
+  .app-cta-col{display:flex;flex-direction:column;gap:.6rem;}
+  .app-btn{display:inline-flex;align-items:center;justify-content:center;gap:.45rem;padding:.8rem 1.2rem;border-radius:999px;font-weight:var(--fw-button, 500);text-decoration:none;font-size:var(--fs-md, 0.9375rem);}
+  .app-btn-primary{background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));color:#fff;}
+  .app-btn-ghost{background:transparent;border:1px solid var(--color-border);color:var(--color-text);}
+  .app-btn:hover{filter:brightness(1.06);}
+  /* Download size beside the primary CTA — a trust cue, deliberately
+     quieter than the button label itself. */
+  .app-btn-size{font-size:var(--fs-sm, 0.875rem);font-weight:var(--fw-button, 500);opacity:.85;white-space:nowrap;}
+  .app-feat-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));justify-content:center;}
+  .app-feat{background:var(--color-card);border:1px solid var(--color-border);border-radius:20px;padding:1.5rem;display:flex;flex-direction:column;gap:.5rem;}
+  .app-feat h3{margin:.4rem 0 .3rem;font-size:var(--fs-lg, 1.125rem);font-weight:var(--fw-heading, 600);line-height:1.35;}
+  .app-feat p{margin:0;color:var(--color-muted);font-size:var(--fs-sm, 0.875rem);line-height:1.65;white-space:pre-line;}
+  .app-feat-ic{color:var(--color-primary);font-size:var(--fs-lg, 1.125rem);}
+  .app-shots{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));justify-content:center;}
+  .app-shot{margin:0;background:var(--color-card);border:1px solid var(--color-border);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;}
+  .app-shot img{width:100%;height:auto;}
+  .app-shot figcaption{padding:.75rem 1rem;font-size:var(--fs-sm, 0.875rem);color:var(--color-muted);line-height:1.6;}
+  .app-req-table{width:100%;border-collapse:collapse;font-size:var(--fs-sm, 0.875rem);}
+  .app-req-table th,.app-req-table td{padding:.75rem 1rem;text-align:right;border-bottom:1px solid var(--color-border);}
+  .app-req-table th{color:var(--color-muted);font-weight:var(--fw-nav, 500);width:10rem;}
+  .app-faq details{background:var(--color-card);border:1px solid var(--color-border);border-radius:16px;padding:.85rem 1.1rem;margin-bottom:.75rem;}
+  .app-faq summary{cursor:pointer;font-weight:var(--fw-nav, 500);font-size:var(--fs-md, 0.9375rem);}
+  .app-faq p{margin:.5rem 0 0;color:var(--color-muted);line-height:1.8;font-size:var(--fs-sm, 0.875rem);}
+  .app-notes{background:var(--color-card);border:1px solid var(--color-border);border-radius:16px;padding:1rem 1.1rem;white-space:pre-line;font-size:var(--fs-sm, 0.875rem);line-height:1.8;}
+  .app-preview-banner{background:var(--color-card);border:1px dashed var(--color-primary);border-radius:16px;padding:.85rem 1.1rem;margin-bottom:1rem;font-weight:var(--fw-label, 500);text-align:center;}
+  /* Free/Pro summary on the app page — deliberately short; the full
+     comparison sits on the plans page (same canonical source). */
+  /* Two plan cards: cap at 2 x 360 + 16px gap and centre, same as .apps-grid,
+     so they stay card-sized instead of stretching to 533px at >=1280. */
+  .app-plan-split{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));justify-content:center;max-width:min(100%,736px);margin-inline:auto;}
+  /* Same card cap as .app-card: a lone plan card must not stretch to 736px. */
+  .app-plan-split>*{width:100%;max-width:360px;margin-inline:auto;}
+  .app-plan-box{background:var(--color-card);border:1px solid var(--color-border);border-radius:20px;padding:1.35rem 1.5rem;display:flex;flex-direction:column;gap:.6rem;}
+  .app-plan-box--pro{border-color:color-mix(in srgb,var(--color-primary) 55%,transparent);}
+  .app-plan-box p{margin:0;color:var(--color-muted);font-size:var(--fs-sm, 0.875rem);line-height:1.75;}
+  .app-plan-tag{display:inline-block;align-self:flex-start;font-size:.8rem;padding:.3rem .7rem;border-radius:999px;background:color-mix(in srgb,var(--color-primary) 14%,transparent);font-weight:var(--fw-label, 500);}
+  .app-plan-tag--pro{background:color-mix(in srgb,var(--color-primary) 26%,transparent);}
+  .app-plan-more{margin:1.25rem 0 0;text-align:center;}
+</style>
+
+    <script>
+(function() {
+  try {
+    /* الافتراضي من اللوحة هو المصدر؛ اختيار الزائر المخزّن بيفضل ساري
+       لحد ما الأدمن يغيّر الافتراضي — ساعتها بيتصفّر للقيمة الجديدة */
+    var serverPub = 'dark';
+    if (serverPub === 'system') serverPub = 'dark';
+    var pMode = localStorage.getItem('pgPublicAppearance');
+    var pFor = localStorage.getItem('pgPublicAppearanceFor');
+    if (!pMode || pMode === 'system' || (pMode !== 'light' && pMode !== 'dark') || pFor !== serverPub) {
+      pMode = serverPub;
+      localStorage.setItem('pgPublicAppearance', pMode);
+      localStorage.setItem('pgPublicAppearanceFor', serverPub);
+    }
+    document.documentElement.setAttribute('data-public-mode', pMode);
+
+    var serverAdm = 'dark';
+    if (serverAdm === 'system') serverAdm = 'dark';
+    var aMode = localStorage.getItem('pgAdminAppearance');
+    var aFor = localStorage.getItem('pgAdminAppearanceFor');
+    if (!aMode || aMode === 'system' || (aMode !== 'light' && aMode !== 'dark') || aFor !== serverAdm) {
+      aMode = serverAdm;
+      localStorage.setItem('pgAdminAppearance', aMode);
+      localStorage.setItem('pgAdminAppearanceFor', serverAdm);
+    }
+    document.documentElement.setAttribute('data-admin-mode', aMode);
+  } catch(e) {}
+})();
+</script>
+
+
+<style id="active-public-theme" data-theme-page="landing" data-theme-source="global" data-theme-preset="arctic">
+
+:root, body, body.landing-page, body.catalog-page, body.public-storefront, body.info-page-body, body.movies-page, body.games-page, body.electronics-page, body.programs-page {
+  --color-primary: #06B6D4;
+  --color-secondary: #0891B2;
+  --color-accent: #67E8F9;
+  --color-background: #06131A;
+  --color-surface: #0F252E;
+  --color-card: #173742;
+  --color-text: #ECFEFF;
+  --color-muted: #8B9FA8;
+  --color-border: #234A56;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #F43F5E;
+  --color-link: #A5F3FC;
+
+  --color-on-primary: #000000;
+
+  /* Readable semantic foregrounds for text that sits on a primary-tinted
+     surface. In dark mode the brand color alone can be too dim on cards, so
+     preserve its hue while pulling it toward the configured text color. */
+  --color-primary-fg: color-mix(in srgb, var(--color-primary) 45%, var(--color-text));
+  --color-price-fg: var(--color-primary-fg);
+  --color-status-new-fg: var(--color-primary-fg);
+  --color-order-fg: var(--color-primary-fg);
+  /* Readable success foreground for status text such as "متاح الآن" on
+     surfaces — mirrors the admin --admin-color-success-fg contract so the
+     raw success hue is never used as body-size ink on cards. */
+  --color-success-fg: color-mix(in srgb, var(--color-success) 45%, var(--color-text));
+
+  /* Compatibility bridge for public component styling (Dark Mode Default) */
+  --bg: var(--color-background);
+  --card-bg: var(--color-card);
+  --card: var(--color-surface);
+  --card-2: var(--color-card);
+  --surface: var(--color-surface);
+  --surface2: var(--color-card);
+  --surface3: color-mix(in srgb, var(--color-card), white 7%);
+  --accent: var(--color-accent);
+  --accent-h: color-mix(in srgb, var(--color-accent), white 28%);
+  --cyan: var(--color-accent);
+  --cyan-dim: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  --cyan-glow: color-mix(in srgb, var(--color-accent) 22%, transparent);
+  --cyan-mid: color-mix(in srgb, var(--color-accent) 42%, transparent);
+  --purple: var(--color-primary);
+  --purple-2: var(--color-secondary);
+  --purple-light: var(--color-link);
+  --gold: var(--color-link);
+  --gold-dim: color-mix(in srgb, var(--color-secondary) 12%, transparent);
+  --gold-glow: color-mix(in srgb, var(--color-secondary) 22%, transparent);
+  --gold-mid: color-mix(in srgb, var(--color-secondary) 42%, transparent);
+  --text: var(--color-text);
+  --white: var(--color-text);
+  --text-dim: var(--color-muted);
+  --muted: var(--color-muted);
+  --border: color-mix(in srgb, var(--color-border) 28%, transparent);
+  --border-hi: color-mix(in srgb, var(--color-border) 52%, transparent);
+  --green: var(--color-success);
+  --red: var(--color-danger);
+
+  /* Shadows (Dark Mode) */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.45);
+  --shadow-elevated: 0 20px 50px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 28px color-mix(in srgb, var(--color-primary) 35%, transparent);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LIGHT MODE DESIGN TOKENS (DYNAMIC PRESET-DRIVEN TINTING)
+   ═══════════════════════════════════════════════════════════════ */
+html[data-public-mode="light"]:not(:has(body.admin-page)):not(:has(body.admin-body)),
+html[data-public-mode="light"] body:not(.admin-page):not(.admin-body),
+html[data-public-mode="light"] body.landing-page:not(.admin-page):not(.admin-body),
+html[data-public-mode="light"] body.catalog-page:not(.admin-page):not(.admin-body),
+html[data-public-mode="light"] body.public-storefront:not(.admin-page):not(.admin-body),
+html[data-public-mode="light"] body.info-page-body:not(.admin-page):not(.admin-body),
+html[data-public-mode="light"] body.movies-page:not(.admin-page):not(.admin-body),
+html[data-public-mode="light"] body.games-page:not(.admin-page):not(.admin-body),
+html[data-public-mode="light"] body.electronics-page:not(.admin-page):not(.admin-body),
+html[data-public-mode="light"] body.programs-page:not(.admin-page):not(.admin-body) {
+
+
+  /* Deliberate preset-owned Light palette. */
+  --color-primary: #0E7490;
+  --color-secondary: #155E75;
+  --color-accent: #0891B2;
+  --color-background: #F3FCFD;
+  --color-surface: #FFFFFF;
+  --color-card: #E8F8FA;
+  --color-text: #123038;
+  --color-muted: #567078;
+  --color-border: #B8DDE3;
+  --color-success: #059669;
+  --color-warning: #B45309;
+  --color-danger: #DC2626;
+  --color-link: #0E7490;
+
+  --color-on-primary: #FFFFFF;
+  --light-bg: #F3FCFD;
+  --light-surface: #FFFFFF;
+  --light-card: #E8F8FA;
+  --light-card-2: #E8F8FA;
+  --light-surface2: #E8F8FA;
+  --light-surface3: color-mix(in srgb, #E8F8FA 88%, #B8DDE3);
+  --light-border: #B8DDE3;
+  --light-border-hi: color-mix(in srgb, #B8DDE3 70%, #0E7490);
+  --light-text: #123038;
+  --light-text-dim: #567078;
+  --light-muted: #567078;
+
+  --light-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
+  --light-shadow-card: 0 2px 10px rgba(15, 23, 42, 0.04), 0 12px 28px -6px rgba(15, 23, 42, 0.06);
+  --light-shadow-elevated: 0 20px 48px -10px rgba(15, 23, 42, 0.12);
+  --light-shadow-glow: 0 14px 36px -6px color-mix(in srgb, var(--color-primary) 24%, rgba(15, 23, 42, 0.08));
+
+  /* Overrides for core palette variables */
+  --color-background: var(--light-bg);
+  --color-surface: var(--light-surface);
+  --color-card: var(--light-card);
+  --color-text: var(--light-text);
+  --color-muted: var(--light-muted);
+  --color-border: var(--light-border);
+
+  /* Component standard bridges */
+  --bg: var(--light-bg);
+  --card-bg: var(--light-card);
+  --card: var(--light-card);
+  --card-2: var(--light-card-2);
+  --surface: var(--light-surface);
+  --surface2: var(--light-surface2);
+  --surface3: var(--light-surface3);
+  --text: var(--light-text);
+  --white: var(--light-text);
+  --text-dim: var(--light-text-dim);
+  --muted: var(--light-muted);
+  --border: var(--light-border);
+  --border-hi: var(--light-border-hi);
+
+  /* Shadows */
+  --shadow-sm: var(--light-shadow-sm);
+  --shadow-card: var(--light-shadow-card);
+  --shadow-elevated: var(--light-shadow-elevated);
+  --shadow-glow: var(--light-shadow-glow);
+
+  /* Soft translucent accents and high-contrast foreground variants for Light Mode */
+  --light-primary-fg: color-mix(in srgb, var(--color-primary) 85%, #000000);
+  /* Keep the established darker primary treatment in light mode while the
+     semantic aliases above let components use one mode-aware contract. */
+  --color-primary-fg: var(--light-primary-fg);
+  --color-price-fg: var(--color-primary-fg);
+  --color-status-new-fg: var(--color-primary-fg);
+  --color-order-fg: var(--color-primary-fg);
+  --light-accent-fg: color-mix(in srgb, var(--color-accent) 85%, #000000);
+  --light-link-fg: color-mix(in srgb, var(--color-link) 85%, #000000);
+  --cyan-dim: color-mix(in srgb, var(--color-accent) 10%, rgba(241, 245, 249, 0.95));
+  --cyan-glow: color-mix(in srgb, var(--color-accent) 18%, transparent);
+  --gold-dim: color-mix(in srgb, var(--color-primary) 10%, rgba(241, 245, 249, 0.95));
+  --gold-glow: color-mix(in srgb, var(--color-primary) 18%, transparent);
+}
+</style>
+
+
+
+<style id="active-admin-theme" data-theme-preset="admin_midnight">
+
+:root, body {
+  --admin-color-background: #030712;
+  --admin-color-surface: #0B132B;
+  --admin-color-card: #111D4A;
+  --admin-color-primary: #3B82F6;
+  --admin-color-secondary: #1E40AF;
+  --admin-color-accent: #60A5FA;
+  --admin-color-text: #F3F4F6;
+  --admin-color-muted: #9CA3AF;
+  --admin-color-border: #1F2937;
+  --admin-color-link: #93C5FD;
+  --admin-color-success: #10B981;
+  --admin-color-warning: #F59E0B;
+  --admin-color-danger: #EF4444;
+  --admin-color-header: #030712;
+  --admin-color-nav: #111D4A;
+  --admin-color-modal: #0B132B;
+
+  /* Preserve the palette value separately: in dark mode the readable muted
+     foreground may be gently lifted toward the configured text ink. */
+  --admin-color-muted-raw: #9CA3AF;
+
+  --admin-color-on-primary: #000000;
+  --admin-color-on-secondary: #FFFFFF;
+  --admin-color-on-accent: #000000;
+  --admin-color-on-success: #000000;
+  --admin-color-on-warning: #000000;
+  --admin-color-on-danger: #000000;
+
+
+  /* Text on soft semantic tints must remain readable in both appearance
+     modes. These resolve against the active palette at use time. */
+  --admin-color-primary-fg: color-mix(in srgb, var(--admin-color-primary) 45%, var(--admin-color-text));
+  --admin-color-secondary-fg: color-mix(in srgb, var(--admin-color-secondary) 45%, var(--admin-color-text));
+  --admin-color-accent-fg: color-mix(in srgb, var(--admin-color-accent) 45%, var(--admin-color-text));
+  --admin-color-success-fg: color-mix(in srgb, var(--admin-color-success) 45%, var(--admin-color-text));
+  --admin-color-warning-fg: color-mix(in srgb, var(--admin-color-warning) 45%, var(--admin-color-text));
+  --admin-color-danger-fg: color-mix(in srgb, var(--admin-color-danger) 45%, var(--admin-color-text));
+}
+
+html[data-admin-mode="light"],
+html[data-admin-mode="light"] body {
+
+
+  /* Deliberate preset-owned Admin Light palette. */
+  --admin-color-background: #F6F8FF;
+  --admin-color-surface: #FFFFFF;
+  --admin-color-card: #EEF3FF;
+  --admin-color-primary: #2563EB;
+  --admin-color-secondary: #1E40AF;
+  --admin-color-accent: #3B82F6;
+  --admin-color-text: #111827;
+  --admin-color-muted: #4B5563;
+  --admin-color-border: #C7D2E8;
+  --admin-color-link: #1D4ED8;
+  --admin-color-success: #047857;
+  --admin-color-warning: #B45309;
+  --admin-color-danger: #DC2626;
+  --admin-color-header: #FFFFFF;
+  --admin-color-nav: #EEF3FF;
+  --admin-color-modal: #FFFFFF;
+
+  --admin-color-on-primary: #FFFFFF;
+  --admin-color-on-secondary: #FFFFFF;
+  --admin-color-on-accent: #000000;
+  --admin-color-on-success: #FFFFFF;
+  --admin-color-on-warning: #FFFFFF;
+  --admin-color-on-danger: #FFFFFF;
+
+  --admin-light-bg: #F6F8FF;
+  --admin-light-surface: #FFFFFF;
+  --admin-light-card: #EEF3FF;
+  --admin-light-card-2: #EEF3FF;
+  --admin-light-header: #FFFFFF;
+  --admin-light-nav: #EEF3FF;
+  --admin-light-modal: #FFFFFF;
+  --admin-light-border: #C7D2E8;
+  --admin-light-border-hi: color-mix(in srgb, #C7D2E8 70%, #2563EB);
+  --admin-light-text: #111827;
+  --admin-light-text-dim: #4B5563;
+  --admin-light-muted: #4B5563;
+
+
+  --admin-color-muted-raw: var(--admin-light-muted);
+  --admin-color-background: var(--admin-light-bg);
+  --admin-color-surface: var(--admin-light-surface);
+  --admin-color-card: var(--admin-light-card);
+  --admin-color-text: var(--admin-light-text);
+  --admin-color-muted: var(--admin-light-muted);
+  --admin-color-border: var(--admin-light-border);
+  --admin-color-header: var(--admin-light-header);
+  --admin-color-nav: var(--admin-light-nav);
+  --admin-color-modal: var(--admin-light-modal);
+}
+
+/* Muted copy is commonly used as compact dashboard metadata. A few built-in
+   dark palettes place its raw hue just under WCAG contrast on their cards, so
+   keep that hue while lifting it a small amount toward the configured text. */
+html[data-admin-mode="dark"],
+html[data-admin-mode="dark"] body {
+  --admin-color-muted: color-mix(in srgb, var(--admin-color-muted-raw) 80%, var(--admin-color-text));
+}
+
+/* ═══ جسر توكنات: صفحات الأدمن (مثل /admin/orders) بتستخدم كلاسات وستايلات
+   inline من نظام العرضة العام (--color-*) — نعيد تعريفها على باليت الأدمن
+   عشان كل اللوحة تتبع ثيم الأدمن مش ثيم المتجر. ده اللي كان مخلي الطلبات
+   تظهر بيربل (#9043B7) وبكروت غامقة في وضع الأدمن الفاتح. ═══ */
+body.admin-page, body.admin-body {
+  --color-background: var(--admin-color-background);
+  --color-surface: var(--admin-color-surface);
+  --color-card: var(--admin-color-card);
+  --color-text: var(--admin-color-text);
+  --color-muted: var(--admin-color-muted);
+  --color-border: var(--admin-color-border);
+  --color-primary: var(--admin-color-primary);
+  --color-secondary: var(--admin-color-secondary);
+  --color-accent: var(--admin-color-accent);
+  --color-link: var(--admin-color-link);
+  --color-success: var(--admin-color-success);
+  --color-warning: var(--admin-color-warning);
+  --color-danger: var(--admin-color-danger);
+  --color-on-primary: var(--admin-color-on-primary, #ffffff);
+}
+</style>
+
+</head>
+
+<body class="catalog-page public-storefront product-detail-page app-detail-page theme-customized" style="">
+    
+    
+    <script src="/static/dist/cart.6e8e8f89.js?v=40"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="glass-header" id="siteNav" dir="rtl">
+    <span class="glass-edge" aria-hidden="true"></span>
+    <div class="nav-inner container-wide">
+
+        <!-- Brand: اللوقو + اسم الموقع (زي النافبار القديمة) -->
+        <a href="/" class="nav-brand" aria-label="Portsaid Computer Games">
+            <img src="/static/uploads/logo_854909eb2ab04eb8ad52c9e9a638b847.webp?v=1791300844"
+                sizes="(max-width: 767px) 38px, 42px" width="42" height="42"
+                alt="Portsaid Computer" class="brand-logo" decoding="async">
+            <span class="brand-text">
+                <small>PORTSAID COMPUTER</small>
+                <strong>Store</strong>
+            </span>
+        </a>
+
+        <!-- Center links: الرئيسية / الأقسام / عن المتجر / تواصل معنا -->
+        <nav class="nav-links">
+            <a href="/#top" class="nav-link "><i class="fa-solid fa-house"></i><span>الرئيسية</span></a>
+            <div class="nav-pages-menu">
+                <button type="button" class="nav-link nav-pages-toggle active" id="navPagesToggle"
+                    aria-expanded="false" aria-controls="navPagesDropdown">
+                    <i class="fa-solid fa-table-cells-large"></i><span>الأقسام</span><i class="fa-solid fa-chevron-down nav-pages-chevron"></i>
+                </button>
+                <div class="nav-pages-dropdown" id="navPagesDropdown">
+                    <a href="/games" class=""><i class="fa-solid fa-gamepad"></i> الألعاب</a>
+                    <a href="/movies" class=""><i class="fa-solid fa-film"></i> أفلام ومسلسلات</a>
+                    <a href="/electronics" class=""><i class="fa-solid fa-microchip"></i> إلكترونيات</a>
+                    <a href="/programs" class=""><i class="fa-solid fa-code"></i> برامج</a>
+                    <a href="/apps" class="active"><i class="fa-solid fa-layer-group"></i> تطبيقات وأدوات</a>
+                </div>
+            </div>
+            
+            <div class="nav-pages-menu">
+                <button type="button" class="nav-link nav-pages-toggle " id="navContactToggle"
+                    aria-expanded="false" aria-controls="navContactDropdown">
+                    <i class="fa-solid fa-headset"></i><span>تواصل معنا</span><i class="fa-solid fa-chevron-down nav-pages-chevron"></i>
+                </button>
+                <div class="nav-pages-dropdown" id="navContactDropdown">
+                    
+                    <a href="/info#about"><i class="fa-solid fa-store"></i> عن المتجر</a>
+                    
+                    <a href="/info#terms"><i class="fa-solid fa-file-contract"></i> سياسة الاستخدام</a>
+                    
+                    <a href="/info#faq"><i class="fa-solid fa-circle-question"></i> الأسئلة الشائعة</a>
+                    
+                    <a href="/info#payments"><i class="fa-solid fa-credit-card"></i> طرق الدفع</a>
+                    
+                    <a href="/info#contact"><i class="fa-solid fa-headset"></i> تواصل معنا</a>
+                    
+                </div>
+            </div>
+            <span data-nav-auth="links" style="display:contents;">
+
+
+<a href="/account/login" class="nav-link" data-auth-open="login" data-no-exit-fade><i class="fa-solid fa-circle-user"></i><span>تسجيل الدخول</span></a>
+</span>
+        </nav>
+
+        <!-- الجانب الأيسر: بحث + صوت + مؤشر المساحة + برجر -->
+        <div class="nav-end">
+        
+        <!-- البحث الموحّد (كل الأنواع) على الصفحات العامة اللي مش كتالوج/لاندينج -->
+        <div class="catalog-search nav-search-global" data-nav-global-search>
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input id="navGlobalSearch" type="search" autocomplete="off"
+                placeholder="ابحث عن لعبة، فيلم، برنامج أو منتج..." aria-label="ابحث في المتجر كله">
+            <div class="nav-suggestions" id="navGlobalSuggestions" style="display:none;"></div>
+        </div>
+        
+
+        <div class="nav-actions">
+            
+            <button class="icon-btn" id="soundBtn" data-sound-toggle onclick="toggleMuted()" title="كتم الأصوات" aria-label="كتم الأصوات" aria-pressed="true"><i class="fa-solid fa-volume-high"></i></button>
+            
+
+            <!-- حسابي / تسجيل الدخول (موبايل) — نفس الـoverlay، بيتحدّث من غير reload -->
+            <span data-nav-auth="mobile" style="display:contents;">
+
+<button type="button" class="icon-btn nav-account-mobile"
+        data-auth-open="login" data-no-exit-fade
+        aria-label="تسجيل الدخول" title="تسجيل الدخول">
+    <i class="fa-solid fa-circle-user"></i>
+</button>
+</span>
+
+            <!-- مؤشر المساحة (HDD) — الضغط عليه يفتح اختيار السعة -->
+            <button type="button" class="storage-badge" id="storageBadge"
+                onclick="openStoragePicker()"
+                title="اضغط لتعديل سعة الهارد" aria-label="مساحة الهارد المستخدمة — اضغط لتعديل السعة">
+                <span class="storage-icon"><i class="fa-solid fa-hard-drive"></i></span>
+                
+                <span class="storage-text lh-tight-ok">
+                    <span class="storage-lbl lh-tight-ok">مساحة الهارد</span>
+                    <span class="storage-val lh-tight-ok"><b id="landStorageUsed" class="lh-tight-ok">0.0 GB</b><span class="storage-limit lh-tight-ok" id="landStorageLimitWrap" style="display:none;">الحد: <span id="landStorageLimitVal" class="lh-tight-ok">0</span> GB</span></span>
+                </span>
+                <span class="storage-track"><span class="storage-fill" id="landStorageFill"></span></span>
+            </button>
+        </div>
+
+        <button type="button" class="nav-burger" id="navBurger" aria-label="القائمة"
+                aria-expanded="false" aria-controls="navDrawer"><i class="fa-solid fa-bars"></i></button>
+        </div><!-- /.nav-end -->
+    </div>
+
+    <div class="nav-drawer" id="navDrawer">
+        <a href="/#top">الرئيسية</a>
+        <span class="nav-drawer-label">الأقسام</span>
+        <a href="/games" class="">الألعاب</a>
+        <a href="/movies" class="">أفلام ومسلسلات</a>
+        <a href="/electronics" class="">إلكترونيات</a>
+        <a href="/programs" class="">برامج</a>
+        <a href="/apps" class="active">تطبيقات وأدوات</a>
+        <span class="nav-drawer-label">تواصل معنا</span>
+        
+        <a href="/info#about">عن المتجر</a>
+        
+        <a href="/info#terms">سياسة الاستخدام</a>
+        
+        <a href="/info#faq">الأسئلة الشائعة</a>
+        
+        <a href="/info#payments">طرق الدفع</a>
+        
+        <a href="/info#contact">تواصل معنا</a>
+        
+        <a href="https://wa.me/201210111650" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> واتساب مباشر</a>
+        <span data-nav-auth="drawer" style="display:contents;">
+
+<a href="/account/login" data-auth-open="login" data-no-exit-fade>تسجيل الدخول</a>
+</span>
+    </div>
+</header>
+
+
+
+
+
+
+
+<div class="dock mobile-dock" id="mobileDock" dir="rtl" role="navigation" aria-label="التنقل السريع">
+    
+    
+    
+    <a href="/" class="dock-item lh-tight-ok"
+       >
+        <i class="fa-solid fa-house lh-tight-ok" aria-hidden="true"></i><span class="lh-tight-ok">الرئيسية</span>
+    </a>
+    
+    
+    
+    <a href="/games" class="dock-item lh-tight-ok"
+       >
+        <i class="fa-solid fa-gamepad lh-tight-ok" aria-hidden="true"></i><span class="lh-tight-ok">ألعاب</span>
+    </a>
+    
+    
+    
+    <a href="/movies" class="dock-item lh-tight-ok"
+       >
+        <i class="fa-solid fa-film lh-tight-ok" aria-hidden="true"></i><span class="lh-tight-ok">أفلام</span>
+    </a>
+    
+    
+    
+    <a href="/electronics" class="dock-item lh-tight-ok"
+       >
+        <i class="fa-solid fa-microchip lh-tight-ok" aria-hidden="true"></i><span class="lh-tight-ok">إلكترونيات</span>
+    </a>
+    
+    
+    
+    <a href="/programs" class="dock-item lh-tight-ok"
+       >
+        <i class="fa-solid fa-code lh-tight-ok" aria-hidden="true"></i><span class="lh-tight-ok">برامج</span>
+    </a>
+    
+    
+    
+    <a href="/apps" class="dock-item lh-tight-ok active"
+       aria-current="page">
+        <i class="fa-solid fa-layer-group lh-tight-ok" aria-hidden="true"></i><span class="lh-tight-ok">تطبيقات</span>
+    </a>
+    
+</div>
+
+
+
+<div class="mobile-nav-search" id="mobileNavSearch" aria-hidden="true" inert>
+    <div class="catalog-search mobile-nav-search-panel" data-nav-global-search role="search" aria-label="البحث في المتجر">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input id="navMobileSearch" type="search" autocomplete="off"
+            placeholder="ابحث عن لعبة، فيلم، برنامج أو منتج..." aria-label="ابحث في المتجر كله">
+        <button type="button" class="mobile-nav-search-close" data-global-search-close aria-label="إغلاق البحث">
+            <span aria-hidden="true">×</span>
+        </button>
+        <div class="nav-suggestions" id="navMobileSuggestions" style="display:none;"></div>
+    </div>
+</div>
+
+
+
+
+<div class="auth-overlay" id="authOverlay"
+     x-data="authOverlay()" x-cloak x-show="open"
+     x-on:keydown.escape.window="close()"
+     x-on:keydown.tab="trapTab($event)"
+     role="presentation">
+
+    <!-- backdrop: دخول/خروج ناعم + ضبابية خفيفة (§16) -->
+    <div class="auth-overlay__backdrop" x-show="open"
+         x-transition:enter="auth-fade-enter" x-transition:enter-start="auth-fade-enter-from"
+         x-transition:leave="auth-fade-leave" x-transition:leave-end="auth-fade-leave-to"
+         x-on:click="close()" aria-hidden="true"></div>
+
+    <!-- سطح الدخول: هيدر ثابت (إغلاق/لوقو/عنوان) + محتوى بيتمرر جوه -->
+    <div class="auth-overlay__card" id="authOverlayCard" role="dialog" aria-modal="true"
+         aria-labelledby="authOverlayTitle"
+         x-show="open"
+         x-transition:enter="auth-pop-enter" x-transition:enter-start="auth-pop-enter-from"
+         x-transition:leave="auth-pop-leave" x-transition:leave-end="auth-pop-leave-to"
+         x-ref="dialog" x-on:click.stop>
+
+        <div class="auth-overlay__head">
+            <button type="button" class="auth-overlay__close" x-on:click="close()"
+                    aria-label="إغلاق" x-ref="closeBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="auth-overlay__brand">
+                <img src="/static/uploads/logo_854909eb2ab04eb8ad52c9e9a638b847.webp?v=1791300844" alt="Portsaid Computer" width="42" height="42" loading="lazy" decoding="async">
+                <div>
+                    <b>Portsaid Computer</b>
+                    <span>حسابك في مكان واحد لكل طلباتك</span>
+                </div>
+            </div>
+
+            <h2 class="auth-overlay__title" id="authOverlayTitle" x-text="title"></h2>
+            <p class="auth-overlay__sub" x-show="mode !== 'forgot'">الحساب اختياري — تقدر تطلب كضيف من غير تسجيل.</p>
+
+            <div class="auth-overlay__error" x-show="error" role="alert" x-cloak>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span x-text="error"></span>
+            </div>
+
+            <div class="auth-overlay__ok" x-show="notice" role="status" x-cloak>
+                <i class="fa-solid fa-circle-check"></i>
+                <span x-text="notice"></span>
+            </div>
+        </div>
+
+        <div class="auth-overlay__scroll">
+            <!-- ════ LOGIN / REGISTER / FORGOT / RESET — shared panels (§4, §9) ════ -->
+            
+<div data-auth-panel="login" x-show="mode === 'login'">
+    
+    <a class="acct-btn acct-google" style="margin-top:0;"
+       href="/account/google/login?next=/apps/smart-cleaner">
+        <i class="fa-brands fa-google"></i> المتابعة بحساب Google
+    </a>
+    <div style="display:flex;align-items:center;gap:10px;margin:14px 0;color:var(--color-muted);font-size:var(--fs-2xs, 0.75rem);font-weight:var(--fw-label, 500);">
+        <span style="flex:1;height:1px;background:var(--color-border);"></span>أو<span style="flex:1;height:1px;background:var(--color-border);"></span>
+    </div>
+    
+
+    <form method="post" action="/account/login" novalidate
+          x-on:submit.prevent="submit('login')" x-ref="form_login">
+        <input type="hidden" name="csrf_token" value="cfc02db60f59228e856660d270db7fd5479510b9c06a10eb3371fc82e0f2bc9e">
+        <input type="hidden" name="_overlay" value="1">
+        <input type="hidden" name="next" x-bind:value="pageUrl">
+        <label class="acct-label" for="authEmail">البريد الإلكتروني</label>
+        <input class="acct-input" id="authEmail" name="email" type="email" required autocomplete="email">
+        <label class="acct-label" for="authPassword">كلمة السر</label>
+        <input class="acct-input" id="authPassword" name="password" type="password" required autocomplete="current-password">
+        <button class="acct-btn" type="submit" style="margin-top:18px;" x-bind:disabled="busy">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <span x-text="busy ? 'جاري الدخول…' : 'تسجيل الدخول'"></span>
+        </button>
+    </form>
+
+    <div class="auth-overlay__switch">
+        مش عندك حساب؟
+        <button type="button" x-on:click="setMode('register')">إنشاء حساب</button>
+        <br>
+        <button type="button" class="auth-overlay__forgot-link" x-on:click="setMode('forgot')">نسيت كلمة المرور؟</button>
+    </div>
+</div>
+            
+<div data-auth-panel="register" x-show="mode === 'register'" x-cloak>
+    <form method="post" action="/account/register" novalidate
+          x-on:submit.prevent="submit('register')" x-ref="form_register">
+        <input type="hidden" name="csrf_token" value="cfc02db60f59228e856660d270db7fd5479510b9c06a10eb3371fc82e0f2bc9e">
+        <input type="hidden" name="_overlay" value="1">
+        <input type="hidden" name="next" x-bind:value="pageUrl">
+        <label class="acct-label" for="authRegName">الاسم</label>
+        <input class="acct-input" id="authRegName" name="name" type="text" required maxlength="100" autocomplete="name">
+        <label class="acct-label" for="authRegEmail">البريد الإلكتروني</label>
+        <input class="acct-input" id="authRegEmail" name="email" type="email" required autocomplete="email">
+        <label class="acct-label" for="authRegPhone">رقم الهاتف <small style="color:var(--color-muted);font-weight:var(--fw-label, 500);">(اختياري)</small></label>
+        <input class="acct-input" id="authRegPhone" name="phone" type="tel" autocomplete="tel">
+        <div class="acct-grid2">
+            <div>
+                <label class="acct-label" for="authRegPassword">كلمة السر</label>
+                <input class="acct-input" id="authRegPassword" name="password" type="password" required minlength="6" autocomplete="new-password">
+            </div>
+            <div>
+                <label class="acct-label" for="authRegConfirm">تأكيد كلمة السر</label>
+                <input class="acct-input" id="authRegConfirm" name="password_confirm" type="password" required minlength="6" autocomplete="new-password">
+            </div>
+        </div>
+        <button class="acct-btn" type="submit" style="margin-top:18px;" x-bind:disabled="busy">
+            <i class="fa-solid fa-user-plus"></i>
+            <span x-text="busy ? 'جاري الإنشاء…' : 'إنشاء حساب'"></span>
+        </button>
+    </form>
+
+    
+    <a class="acct-btn acct-google" href="/account/google/login?next=/apps/smart-cleaner">
+        <i class="fa-brands fa-google"></i> التسجيل بحساب Google
+    </a>
+    
+
+    <div class="auth-overlay__switch">
+        عندك حساب بالفعل؟
+        <button type="button" x-on:click="setMode('login')">تسجيل الدخول</button>
+    </div>
+</div>
+            
+<div data-auth-panel="forgot" x-show="mode === 'forgot'" x-cloak>
+    <p class="auth-overlay__sub" style="margin-bottom:10px;">
+        اكتب البريد الإلكتروني اللي سجّلت بيه، وهنبعتلك رابط لتعيين كلمة سر جديدة.
+    </p>
+
+    <form method="post" action="/account/forgot" novalidate
+          x-on:submit.prevent="submit('forgot')" x-ref="form_forgot">
+        <input type="hidden" name="csrf_token" value="cfc02db60f59228e856660d270db7fd5479510b9c06a10eb3371fc82e0f2bc9e">
+        <input type="hidden" name="_overlay" value="1">
+        <input type="hidden" name="next" x-bind:value="pageUrl">
+        <label class="acct-label" for="authForgotEmail">البريد الإلكتروني</label>
+        <input class="acct-input" id="authForgotEmail" name="email" type="email" required autocomplete="email">
+        <button class="acct-btn" type="submit" style="margin-top:18px;" x-bind:disabled="busy">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span x-text="busy ? 'جاري الإرسال…' : 'إرسال رابط الاستعادة'"></span>
+        </button>
+    </form>
+
+    <div class="auth-overlay__switch">
+        <button type="button" x-on:click="setMode('login')"><i class="fa-solid fa-arrow-right"></i> الرجوع لتسجيل الدخول</button>
+    </div>
+
+    <div class="auth-overlay__legal" style="margin-top:14px;">
+        لو البريد غير متاح مؤقتًا، كلمنا مباشرة:
+        <a class="auth-overlay__wa" href="https://wa.me/201210111650?text=%D8%A7%D9%86%D8%A7%20%D9%86%D8%B3%D9%8A%D8%AA%20%D9%83%D9%84%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%B1" target="_blank" rel="noopener" style="margin-top:8px;">
+            <i class="fa-brands fa-whatsapp"></i> تواصل واتساب
+        </a>
+    </div>
+</div>
+            
+<div data-auth-panel="reset" x-show="mode === 'reset'" x-cloak>
+    <p class="auth-overlay__sub" style="margin-bottom:10px;">
+        حدّد كلمة سر جديدة لحسابك.
+    </p>
+
+    <form method="post" action="/account/reset-password" novalidate
+          x-on:submit.prevent="submit('reset')" x-ref="form_reset">
+        <input type="hidden" name="csrf_token" value="cfc02db60f59228e856660d270db7fd5479510b9c06a10eb3371fc82e0f2bc9e">
+        <input type="hidden" name="_overlay" value="1">
+        <label class="acct-label" for="authResetPassword">كلمة السر الجديدة</label>
+        <input class="acct-input" id="authResetPassword" name="password" type="password" required minlength="6" autocomplete="new-password">
+        <label class="acct-label" for="authResetConfirm">تأكيد كلمة السر الجديدة</label>
+        <input class="acct-input" id="authResetConfirm" name="password_confirm" type="password" required minlength="6" autocomplete="new-password">
+        <button class="acct-btn" type="submit" style="margin-top:18px;" x-bind:disabled="busy">
+            <i class="fa-solid fa-key"></i>
+            <span x-text="busy ? 'جاري الحفظ…' : 'تعيين كلمة السر'"></span>
+        </button>
+    </form>
+
+    <div class="auth-overlay__switch">
+        <button type="button" x-on:click="setMode('forgot')"><i class="fa-solid fa-arrow-right"></i> طلب رابط جديد</button>
+    </div>
+</div>
+
+            <div class="auth-overlay__legal">
+                بتسجيل الدخول أنت توافق على <a href="/info#terms" style="color:var(--color-primary);font-weight:var(--fw-strong, 600);">شروط الاستخدام</a>.
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/static/dist/auth-overlay.62a11745.js?v=4" defer></script>
+
+
+
+<script src="/static/dist/search.71cb3182.js?v=2"></script>
+<script src="/static/dist/global-nav-search.18fd807b.js?v=1"></script>
+
+    
+    
+<main class="pd-shell">
+    
+
+    <!-- Breadcrumb -->
+    <nav class="pd-crumb" aria-label="مسار التنقل">
+        <a href="/"><i class="fa-solid fa-house" aria-hidden="true"></i> الرئيسية</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="/apps">تطبيقات وأدوات</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current" aria-current="page">Smart Cleaner</span>
+    </nav>
+
+    <!-- ═══════════ المعرض + CTA — نفس هيكل صفحة تفاصيل المنتج ═══════════ -->
+    <section class="pd-layout" aria-label="Smart Cleaner">
+
+        <!-- ═══ المعرض: الغلاف والشعار والأيقونة واللقطات، مش صورة واحدة ═══ -->
+        
+        <div class="pd-media" data-pd-gallery aria-label="صور Smart Cleaner">
+            <div class="pd-stage" data-pd-stage tabindex="0" role="group"
+                 
+                 aria-label="معرض صور Smart Cleaner">
+                <img class="pd-main-img" data-pd-main
+                     src="/static/uploads/smart-cleaner-icon.png"
+                     alt="الأيقونة"
+                     loading="eager" fetchpriority="high" decoding="async"
+                     onerror="handleImgError ? handleImgError(this) : null">
+                
+            </div>
+            
+        </div>
+
+        <!-- ═══ البيانات + CTA (روابط — بدون سلة) ═══ -->
+        <div class="pd-panel">
+            <div class="pd-core">
+                <span class="pd-kicker"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> تطبيقات وأدوات</span>
+                <h1 class="pd-title">Smart Cleaner</h1>
+                <p style="color:var(--color-muted);margin:.3rem 0 0;line-height:1.7;">بيقولك إيه اللي واخد مساحة، وليه، وبعدين يعزله بأمان لحد ما تقرر.</p>
+
+                <div class="app-chips">
+                    
+                    <span class="app-chip" dir="ltr">Windows</span>
+                    
+                    
+                    <span class="app-chip app-chip--plan">Free</span>
+                    
+                    <span class="app-chip app-chip--plan">Pro</span>
+                    
+                    
+                    <span class="app-chip app-chip--ver" dir="ltr">v1.0.22</span>
+                    
+                </div>
+            </div>
+
+            <div class="pd-buy-zone">
+                <div class="app-cta-col">
+                    
+                    <a class="app-btn app-btn-primary" href="/smart-cleaner/download">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i> تحميل التطبيق<span class="app-btn-size">· 80 ميجابايت</span>
+                    </a>
+                    
+                    
+                    <a class="app-btn app-btn-ghost" href="/smart-cleaner/plans">
+                        <i class="fa-solid fa-crown" aria-hidden="true"></i> قارن خطط Free وPro
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ الكتل ═══════════ -->
+    
+    <section class="pd-block wash-panel" aria-labelledby="appOverviewTitle">
+        <div class="ambient-glow glow-a"></div>
+        <div class="ambient-glow glow-b"></div>
+        <h2 class="pd-block-h" id="appOverviewTitle"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> نظرة عامة</h2>
+        <div class="pd-desc">Smart Cleaner بيدور على الحاجات اللي واخدة من مساحة جهازك: الملفات المؤقتة والكاش، والملفات الكبيرة والمكررة، والملفات اللي بقالها فترة متغيرتش. قبل أي إجراء بيقولك كل ملف إيه هو، ومين صاحبه، وإيه اللي يخلي فيه شك — وملفات النظام والملفات المستخدمة دلوقتي مش بتتلمس.
+
+أي ملف مشكوك فيه بينقل لخزنة محمية بدل ما يتمسح، وتقدر ترجعه لمكانه الأصلي أو لأي مكان تاني في أي وقت.
+
+كل الحاجات الأساسية موجودة في Free من غير حساب ولا تفعيل، وPro بيضيف ربط أكتر من جهاز على حساب واحد والتفعيل من المتصفح من غير أي مفتاح.</div>
+    </section>
+    
+
+    
+    <section class="pd-block wash-panel" aria-labelledby="appFeatTitle">
+        <div class="ambient-glow glow-a"></div>
+        <div class="ambient-glow glow-b"></div>
+        <h2 class="pd-block-h" id="appFeatTitle"><i class="fa-solid fa-star" aria-hidden="true"></i> المميزات</h2>
+        <div class="app-feat-grid">
+            
+            <div class="app-feat">
+                <span class="app-feat-ic"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></span>
+                <h3>فحص بكل الأنواع وسبب لكل ملف</h3>
+                <p>سريع أو ذكي أو عميق — وكل ملف بيظهر مع سبب الخطر ومين صاحبه قبل أي إجراء.</p>
+            </div>
+            
+            <div class="app-feat">
+                <span class="app-feat-ic"><i class="fa-solid fa-box-archive" aria-hidden="true"></i></span>
+                <h3>عزل يمكن التراجع عنه</h3>
+                <p>الملف بينقل لخزنة محمية، وتقدر ترجعه لمكانه الأصلي أو لأي مكان تاني في أي وقت.</p>
+            </div>
+            
+            <div class="app-feat">
+                <span class="app-feat-ic"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+                <h3>حماية صارمة لملفات النظام</h3>
+                <p>ملفات ويندوز و WinSxS والملفات المستخدمة دلوقتي ممنوع تتلمس، وأي حاجة مشبوهة بتتوقف وبتتشرح.</p>
+            </div>
+            
+            <div class="app-feat">
+                <span class="app-feat-ic"><i class="fa-solid fa-chart-column" aria-hidden="true"></i></span>
+                <h3>مساحة الأقراص والرؤى والسجل</h3>
+                <p>تحليل مساحة كل قرص، والملفات الكبيرة والمكررة والقديمة، وسجل بكل العمليات — كل ده في Free.</p>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <section class="pd-block wash-panel" aria-labelledby="appPlansTitle" hidden>
+        <div class="ambient-glow glow-a"></div>
+        <div class="ambient-glow glow-b"></div>
+        <h2 class="pd-block-h" id="appPlansTitle"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i> إيه اللي في Free وإيه اللي في Pro؟</h2>
+        <div class="app-plan-split">
+            <div class="app-plan-box">
+                <span class="app-plan-tag">Free (من غير حساب)</span>
+                <p>فحص سريع وذكي، سبب كل ملف، عزل واسترجاع، حماية النظام، الملفات الكبيرة والقديمة، معاينة المكرر، تحليل مساحة الأقراص، والسجل.</p>
+            </div>
+            <div class="app-plan-box app-plan-box--pro">
+                <span class="app-plan-tag app-plan-tag--pro">Pro</span>
+                <p>الفحص العميق، البحث الكامل عن المكرر، الفحص المجدول، التقارير، متابعة الاتجاهات، وربط لحد 3 أجهزة على حساب واحد.</p>
+            </div>
+        </div>
+        
+        <p class="pd-desc" style="margin:1rem 0 0;color:var(--color-muted);font-size:var(--fs-sm,0.875rem);">تحديث 1.0.22 فيه الفصل الجديد بين Free و Pro: الفحص العميق، والبحث الكامل عن الملفات المكررة، والفحص المجدول، والتقارير، ومتابعة الاتجاهات. نزّل النسخة الجديدة من صفحة التحميل، وكل حاجة في Free زي ما هي.</p>
+        
+        
+        <p class="app-plan-more">
+            <a class="app-btn app-btn-ghost" href="/smart-cleaner/plans">
+                شوف المقارنة كاملة بين Free و Pro
+            </a>
+        </p>
+        
+    </section>
+    
+
+    
+
+    
+
+    <!-- ═══ تطبيقات أخرى ═══ -->
+    
+    <section class="pd-related wash-panel" aria-labelledby="appRelatedTitle">
+        <div class="ambient-glow glow-a"></div>
+        <div class="ambient-glow glow-b"></div>
+        <div class="pd-sec-head">
+            <span class="pd-eyebrow">✦ تطبيقات وأدوات ✦</span>
+            <h2 class="pd-sec-title" id="appRelatedTitle">تطبيقات أخرى</h2>
+        </div>
+        <div class="pd-related-grid">
+            
+            <a class="pd-rel-card" href="/apps/media-downloader" title="PortSaid Media Downloader">
+                <span class="pd-rel-frame">
+                    <img class="pd-rel-img" src="/static/uploads/thumbs/media-downloader-badge.webp" alt="PortSaid Media Downloader" loading="lazy" decoding="async"
+                         onerror="handleImgError ? handleImgError(this) : null">
+                </span>
+                <span class="pd-rel-body">
+                    <span class="pd-rel-name">PortSaid Media Downloader</span>
+                    <span class="pd-rel-foot">
+                        <span class="app-chip app-chip--ver" dir="ltr">v2.3.1</span>
+                    </span>
+                </span>
+            </a>
+            
+        </div>
+    </section>
+    
+</main>
+
+<div class="floating-actions" id="floatingActions">
+    <button type="button" class="fab-btn fab-search" id="fabSearch" data-global-search-open
+            title="البحث في المتجر" aria-label="البحث في المتجر"
+            aria-controls="mobileNavSearch" aria-expanded="false">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+    </button>
+</div>
+
+
+    
+    <!-- ═══════════ السلة المشتركة (سلة اللاندينج على كل الصفحات العامة) ═══════════ -->
+    
+<div class="land-cart-backdrop" id="landCartBackdrop"></div>
+<aside class="land-cart" id="cartOffcanvas" role="dialog" aria-modal="true" aria-hidden="true" inert tabindex="-1" aria-label="سلة المشتريات">
+    <div class="cart-head">
+        <div style="display:flex;align-items:center;gap:13px;">
+            <div class="cart-head-icon-wrap"><i class="fa-solid fa-basket-shopping"></i></div>
+            <div>
+                <div class="cart-head-title">سلة المشتريات</div>
+                <div class="cart-head-sub" id="cartHeadSub">سلتك فارغة</div>
+            </div>
+        </div>
+        <button type="button" class="cart-close-btn-new" data-cart-close aria-label="إغلاق السلة">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <div class="cart-body" id="cartItemsList"></div>
+    <div class="cart-foot">
+        <div id="cartFooterContainer"></div>
+        <button class="cart-clear-btn" onclick="clearAllCart()" type="button">
+            <i class="fa-solid fa-trash"></i> حذف كل السلة
+        </button>
+        <button class="cart-checkout-btn" onclick="confirmCheckout()">
+            <i class="fa-solid fa-paper-plane"></i> إتمام الطلب
+        </button>
+        <button class="cart-close-bottom" data-cart-close type="button">
+            <i class="fa-solid fa-xmark"></i> إغلاق السلة
+        </button>
+    </div>
+</aside>
+
+    <button class="global-cart-fab" type="button" data-cart-open aria-label="فتح سلة التسوق" title="سلة التسوق">
+        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+    </button>
+    
+    <script src="/static/dist/swal-lazy.4c274196.js"
+        data-css="/static/dist/sweetalert2.min.ee3512f8.css"
+        data-js="/static/dist/sweetalert2.all.min.d836e0e7.js"></script>
+    <script src="/static/dist/sound-manager.c6fbc94e.js"></script>
+    <script src="/static/dist/toast.738a35aa.js"></script>
+    <script src="/static/dist/motion.c80ca04f.js?v=6"></script>
+    
+    
+<script src="/static/dist/product_detail.2f0f17cf.js?v=2" defer></script>
+
+    <script src="/static/dist/aos.a5005b2e.js?v=1"></script>
+    <script src="/static/dist/motion-stack.097db9d6.js?v=3"></script>
+    
+    <script defer src="/static/dist/pwa.ef87931e.js"></script>
+    
+    <script defer src="/static/dist/alpine.min.c13d85e5.js?v=1"></script>
+</body>
+
+</html>
