@@ -1393,7 +1393,7 @@ body.admin-page, body.admin-body {
                     </div>
                     <!-- HTMX: البحث live — البحث العام بيُلغي فلتر القسم/السنة (نفس سلوك بوكس الموبايل القديم) -->
                     <input type="text" id="movieSearchPage" name="q" value="" placeholder="ابحث بالعربي أو الإنجليزي..." autocomplete="off"
-                        hx-get="/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1" hx-trigger="input changed delay:300ms"
+                        hx-get="/Portsaid-game-/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1" hx-trigger="input changed delay:300ms"
                         hx-target="#moviesResultsBody" hx-swap="innerHTML"
                         hx-indicator="#moviesSection"
                         style="flex:1;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.06);border-radius:12px;color:var(--color-text);padding:12px 15px;font-family:'Cairo', 'Tajawal', sans-serif;font-weight:var(--fw-body, 400);font-size:var(--fs-base, 1rem);outline:none;" aria-label="ابحث عن فيلم أو مسلسل">
@@ -1419,7 +1419,7 @@ body.admin-page, body.admin-body {
                     <div class="sec-head-title"><i class="fa-solid fa-layer-group"></i> تصفح حسب القسم</div>
                     <div class="sec-head-line"></div>
                 </div>
-                <!-- HTMX: كروت الأقسام بتضرب /movies/grid?cat=.. -->
+                <!-- HTMX: كروت الأقسام بتضرب /Portsaid-game-/movies/grid?cat=.. -->
                 <div class="cat-grid" id="catGrid" data-fx-grid>
                     
                     
@@ -1428,7 +1428,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.0s" 
     data-cat-id="1" aria-pressed="false"
-    hx-get="/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=1&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=1"
+    hx-get="/Portsaid-game-/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=1&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=1"
     hx-target="#moviesResultsBody" hx-swap="innerHTML" hx-indicator="#moviesSection">
     <div class="cat-img">
         
@@ -1445,7 +1445,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.06s" 
     data-cat-id="2" aria-pressed="false"
-    hx-get="/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=2&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=2"
+    hx-get="/Portsaid-game-/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=2&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=2"
     hx-target="#moviesResultsBody" hx-swap="innerHTML" hx-indicator="#moviesSection">
     <div class="cat-img">
         
@@ -1462,7 +1462,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.12s" 
     data-cat-id="3" aria-pressed="false"
-    hx-get="/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=3&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=3"
+    hx-get="/Portsaid-game-/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=3&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=3"
     hx-target="#moviesResultsBody" hx-swap="innerHTML" hx-indicator="#moviesSection">
     <div class="cat-img">
         
@@ -1479,7 +1479,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.18s" 
     data-cat-id="4" aria-pressed="false"
-    hx-get="/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=4&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=4"
+    hx-get="/Portsaid-game-/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=4&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=4"
     hx-target="#moviesResultsBody" hx-swap="innerHTML" hx-indicator="#moviesSection">
     <div class="cat-img">
         
@@ -1496,7 +1496,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.24s" 
     data-cat-id="5" aria-pressed="false"
-    hx-get="/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=5&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=5"
+    hx-get="/Portsaid-game-/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=5&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=5"
     hx-target="#moviesResultsBody" hx-swap="innerHTML" hx-indicator="#moviesSection">
     <div class="cat-img">
         
@@ -1513,7 +1513,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.3s" 
     data-cat-id="6" aria-pressed="false"
-    hx-get="/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=6&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=6"
+    hx-get="/Portsaid-game-/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=6&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=6"
     hx-target="#moviesResultsBody" hx-swap="innerHTML" hx-indicator="#moviesSection">
     <div class="cat-img">
         
@@ -1530,7 +1530,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.36s" 
     data-cat-id="7" aria-pressed="false"
-    hx-get="/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=7&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=7"
+    hx-get="/Portsaid-game-/movies/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=7&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/movies?category=7"
     hx-target="#moviesResultsBody" hx-swap="innerHTML" hx-indicator="#moviesSection">
     <div class="cat-img">
         

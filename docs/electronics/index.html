@@ -922,7 +922,7 @@ body.admin-page, body.admin-body {
                     </div>
                     <!-- HTMX: البحث live — البحث العام بيُلغي فلتر القسم/الماركة (نفس سلوك بوكس الموبايل القديم) -->
                     <input type="text" id="elecSearchPage" name="q" value="" placeholder="ابحث بالعربي أو الإنجليزي..." autocomplete="off"
-                        hx-get="/electronics/grid?sort=alpha&amp;layout=grid2&amp;page=1" hx-trigger="input changed delay:300ms"
+                        hx-get="/Portsaid-game-/electronics/grid?sort=alpha&amp;layout=grid2&amp;page=1" hx-trigger="input changed delay:300ms"
                         hx-target="#electronicsResultsBody" hx-swap="innerHTML"
                         hx-indicator="#productsSection"
                         style="flex:1;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.06);border-radius:12px;color:var(--color-text);padding:12px 15px;font-family:'Cairo', 'Tajawal', sans-serif;font-weight:var(--fw-body, 400);font-size:var(--fs-base, 1rem);outline:none;" aria-label="ابحث عن منتج">
@@ -948,7 +948,7 @@ body.admin-page, body.admin-body {
                     <div class="sec-head-title"><i class="fa-solid fa-layer-group"></i> تصفح حسب القسم</div>
                     <div class="sec-head-line"></div>
                 </div>
-                <!-- HTMX: كروت الأقسام بتضرب /electronics/grid?cat=.. -->
+                <!-- HTMX: كروت الأقسام بتضرب /Portsaid-game-/electronics/grid?cat=.. -->
                 <div class="cat-grid" id="catGrid" data-fx-grid>
                     
                     
@@ -957,7 +957,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.0s" 
     data-cat-id="1" aria-pressed="false"
-    hx-get="/electronics/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=1&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/electronics?category=1"
+    hx-get="/Portsaid-game-/electronics/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=1&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/electronics?category=1"
     hx-target="#electronicsResultsBody" hx-swap="innerHTML" hx-indicator="#productsSection">
     <div class="cat-img">
         
@@ -974,7 +974,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.06s" 
     data-cat-id="2" aria-pressed="false"
-    hx-get="/electronics/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=2&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/electronics?category=2"
+    hx-get="/Portsaid-game-/electronics/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=2&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/electronics?category=2"
     hx-target="#electronicsResultsBody" hx-swap="innerHTML" hx-indicator="#productsSection">
     <div class="cat-img">
         

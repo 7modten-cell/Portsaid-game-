@@ -1371,9 +1371,9 @@ body.admin-page, body.admin-body {
                     style="width:44px;height:44px;flex-shrink:0;background:color-mix(in srgb, var(--color-primary) 12%, transparent);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--accent);border:1px solid color-mix(in srgb, var(--color-primary) 25%, transparent);">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <!-- HTMX: البحث live — كل ضغطة (بعد 300ms) بتضرب /games/grid وبتبدل النتايج partial -->
+                <!-- HTMX: البحث live — كل ضغطة (بعد 300ms) بتضرب /Portsaid-game-/games/grid وبتبدل النتايج partial -->
                 <input type="text" id="gameSearch" name="q" value="" placeholder="ابحث بالعربي أو الإنجليزي..." autocomplete="off"
-                    hx-get="/games/grid?sort=alpha&amp;layout=grid2&amp;page=1" hx-trigger="input changed delay:300ms"
+                    hx-get="/Portsaid-game-/games/grid?sort=alpha&amp;layout=grid2&amp;page=1" hx-trigger="input changed delay:300ms"
                     hx-target="#gamesResultsBody" hx-swap="innerHTML"
                     hx-indicator="#gamesResults"
                     style="flex:1;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.06);border-radius:12px;color:var(--color-text);padding:12px 15px;font-family:'Cairo', 'Tajawal', sans-serif;font-weight:var(--fw-body, 400);font-size:var(--fs-base, 1rem);outline:none;" aria-label="ابحث عن لعبة">
@@ -1399,7 +1399,7 @@ body.admin-page, body.admin-body {
             <div class="sec-head-title"><i class="fa-solid fa-layer-group"></i> تصفح حسب القسم</div>
             <div class="sec-head-line"></div>
         </div>
-        <!-- HTMX: كل كارت قسم بيعمل GET على /games/grid?cat=.. والـ fragment بيرجع
+        <!-- HTMX: كل كارت قسم بيعمل GET على /Portsaid-game-/games/grid?cat=.. والـ fragment بيرجع
              النتايج + الشريط الفرعي + القسم النشط (OOB) -->
         <div class="cat-grid" id="catGrid" data-fx-grid>
             
@@ -1409,7 +1409,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.0s" 
     data-cat-id="1" aria-pressed="false"
-    hx-get="/games/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=1&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/games?category=1"
+    hx-get="/Portsaid-game-/games/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=1&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/games?category=1"
     hx-target="#gamesResultsBody" hx-swap="innerHTML" hx-indicator="#gamesResults">
     <div class="cat-img">
         
@@ -1426,7 +1426,7 @@ body.admin-page, body.admin-body {
 <button type="button" class="cat-card animate-in"
     style="animation-delay:0.06s" 
     data-cat-id="2" aria-pressed="false"
-    hx-get="/games/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=2&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/games?category=2"
+    hx-get="/Portsaid-game-/games/grid?sort=alpha&amp;layout=grid2&amp;page=1&amp;cat=2&amp;scroll=results&hist=push" hx-push-url="/Portsaid-game-/games?category=2"
     hx-target="#gamesResultsBody" hx-swap="innerHTML" hx-indicator="#gamesResults">
     <div class="cat-img">
         
